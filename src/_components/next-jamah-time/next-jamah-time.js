@@ -40,21 +40,21 @@ class NextJammahTime extends Component {
     if (this.stringToTime(`${currentDate['fajr_jamaah']} AM`) > currentTime) {
       return {
         name: 'Fajr',
-        time: `${currentDate['fajr_jamaah']} AM`
+        time: `${currentDate['fajr_begins']} AM`
       };
     }
 
     if (this.stringToTime(`${currentDate['zuhr_jamaah']} PM`) > currentTime) {
       return {
         name: 'Zuhr',
-        time: `${currentDate['zuhr_jamaah']} PM`
+        time: `${currentDate['zuhr_begins']} PM`
       };
     }
 
     if (this.stringToTime(`${currentDate['asr_jamaah']} PM`) > currentTime) {
       return {
         name: 'Asr',
-        time: `${currentDate['asr_jamaah']} PM`
+        time: `${currentDate['asr_begins']} PM`
       };
     }
 
@@ -63,21 +63,21 @@ class NextJammahTime extends Component {
     ) {
       return {
         name: 'Maghrib',
-        time: `${currentDate['maghrib_jamaah']} PM`
+        time: `${currentDate['maghrib_begins']} PM`
       };
     }
 
     if (this.stringToTime(`${currentDate['isha_jamaah']} PM`) > currentTime) {
       return {
         name: 'Isha',
-        time: `${currentDate['isha_jamaah']} PM`
+        time: `${currentDate['isha_begins']} PM`
       };
     }
 
     // if none return the next day fajr
     return {
       name: 'Fajr',
-      time: `${tomorrowsPrayerTime['fajr_jamaah']} AM`
+      time: `${tomorrowsPrayerTime['fajr_begins']} AM`
     };
   }
 
@@ -87,7 +87,7 @@ class NextJammahTime extends Component {
         <table className="NextJammahTime">
           <thead>
             <tr>
-              <th>Next Jama'ah</th>
+              <th>Next prayer begins</th>
             </tr>
           </thead>
           <tbody>
