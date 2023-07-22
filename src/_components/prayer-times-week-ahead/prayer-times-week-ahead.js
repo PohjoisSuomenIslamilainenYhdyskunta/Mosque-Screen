@@ -37,25 +37,25 @@ class PrayerTimesWeekAhead extends Component {
           <td>{date}</td>
           {/* FAJR */}
           <td>{times['fajr_begins']}</td>
-          <td>{times['fajr_jamaah']}</td>
+          {/* <td>{times['fajr_jamaah']}</td> */}
           <td>{times['sunrise']}</td>
 
           {/* ZUHR */}
           <td>{times['zuhr_begins']}</td>
-          <td>{times['zuhr_jamaah']}</td>
+          {/* <td>{times['zuhr_jamaah']}</td> */}
 
           {/* ASR */}
           <td>{times['asr_1_begins']}</td>
-          <td>{times['asr_2_begins']}</td>
-          <td>{times['asr_jamaah']}</td>
+          {/* <td>{times['asr_2_begins']}</td> */}
+          {/* <td>{times['asr_jamaah']}</td> */}
 
           {/* MAGHRIB */}
           <td>{times['maghrib_begins']}</td>
-          <td>{times['maghrib_jamaah']}</td>
+          {/* <td>{times['maghrib_jamaah']}</td> */}
 
           {/* ISHA */}
           <td>{times['isha_begins']}</td>
-          <td>{times['isha_jamaah']}</td>
+          {/* <td>{times['isha_jamaah']}</td> */}
         </tr>
       );
     }
@@ -71,37 +71,38 @@ class PrayerTimesWeekAhead extends Component {
           <thead>
             <tr>
               <th>Week ahead</th>
-              <th colSpan="3">Fajr</th>
-              <th colSpan="2">Zuhr</th>
-              <th colSpan="3">Asr</th>
-              <th colSpan="2">Maghrib</th>
-              <th colSpan="2">Isha</th>
+              <th colSpan="1">Fajr</th>
+              <th colSpan="1">Sunrise</th>
+              <th colSpan="1">Zuhr</th>
+              <th colSpan="1">Asr</th>
+              <th colSpan="1">Maghrib</th>
+              <th colSpan="1">Isha</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td />
               {/* FAJR */}
-              <td>Begins</td>
-              <td>Jama'ah</td>
-              <td>Sunrise</td>
+              {/* <td>Begins</td> */}
+              {/* <td>Jama'ah</td> */}
+              {/* <td>Sunrise</td> */}
 
               {/* ZUHR */}
-              <td>Begins</td>
-              <td>Jama'ah</td>
+              {/* <td>Begins</td> */}
+              {/* <td>Jama'ah</td> */}
 
               {/* ASR */}
-              <td>Mithl 1</td>
-              <td>Mithl 2</td>
-              <td>Jama'ah</td>
+              {/* <td>Mithl 1</td> */}
+              {/* <td>Mithl 2</td>
+              <td>Jama'ah</td> */}
 
               {/* MAGHRIB */}
-              <td>Begins</td>
-              <td>Jama'ah</td>
+              {/* <td>Begins</td> */}
+              {/* <td>Jama'ah</td> */}
 
               {/* ISHA */}
-              <td>Begins</td>
-              <td>Jama'ah</td>
+              {/* <td>Begins</td> */}
+              {/* <td>Jama'ah</td> */}
             </tr>
             {rows}
           </tbody>
